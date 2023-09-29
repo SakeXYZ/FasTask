@@ -19,13 +19,6 @@ def create_trello_card(card_name, card_desc):
     print(json.loads(new_card.text))
 
 
-def check_board_card():
-    params = {
-        "key":trello_key,
-        "token":trello_token,
-    }
-
-
 def main():
     create_trello_card(str(input("Введите отдел :")), str(input("Введите проблему: ")))
 
